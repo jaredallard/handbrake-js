@@ -1,7 +1,7 @@
 {
   "name": "handbrake-js",
-  "author": "Lloyd Brookes <75pound@gmail.com>",
-  "version": "3.0.0",
+  "author": "Jared Allard <jaredallard@outlook.com>",
+  "version": "3.0.1",
   "description": "Handbrake for node.js. Brings video encoding.",
   "repository": "https://github.com/75lb/handbrake-js.git",
   "main": "./lib/handbrake-js.js",
@@ -36,11 +36,11 @@
     "object-to-spawn-args": "^1.1.0",
     "request": "^2.81.0",
     "rimraf": "^2.6.1",
-    "unzip": "~0.1",
-    "usage-stats": "^0.8.5"
+    "unzip": "^0.1.11"
   },
   "devDependencies": {
     "core-assert": "^0.2.1",
+    "eslint": "^5.11.1",
     "jsdoc-to-markdown": "^3.0.0",
     "test-runner": "^0.3.0"
   },
