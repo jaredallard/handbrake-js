@@ -3,7 +3,6 @@
 var ansi = require('ansi-escape-sequences')
 var commandLineArgs = require('command-line-args')
 var hbjs = require('../lib/handbrake-js')
-hbjs._usage.defaults.set('cd4', 'cli')
 var cliOptions = require('../lib/cli-options')
 var util = require('util')
 
@@ -11,9 +10,6 @@ var handbrakeOptions = {}
 try {
   handbrakeOptions = commandLineArgs(cliOptions)._all
 } catch (err) {
-  hbjs._usage.exception({ exd: err.toString() })
-  hbjs._usage.send({ timeout: 3000 })
-    .catch(function () { /* disregard errors */ })
   halt(err)
   return
 }
