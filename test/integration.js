@@ -7,6 +7,7 @@ var a = require('core-assert')
 var Counter = require('./lib/counter')
 
 var runner = new TestRunner()
+hbjs._usage.disable()
 
 runner.test('cli: --preset-list', function () {
   var counter = Counter.create(1)
